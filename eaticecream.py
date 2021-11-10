@@ -32,3 +32,5 @@ print(bb)
 print(len(bb))
 print(bb[3])   # single index
 print(bb[1:3])  # --> bb[slice(1,3)]
+
+print(b + b)
