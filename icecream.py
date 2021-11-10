@@ -28,7 +28,7 @@ class Bowl:
         # return output
 
     def __repr__(self):
-        output = 'Bowl of: '
+        output = 'Bowl of: \n'
         for one_scoop in self.scoops:
             output += f'\t{one_scoop}\n'
 
