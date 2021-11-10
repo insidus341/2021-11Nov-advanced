@@ -1,2 +1,0 @@
-class Scoop:
-    def __init__(
