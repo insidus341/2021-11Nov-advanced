@@ -16,10 +16,13 @@ class Bowl:
             self.scoops.append(one_scoop)
 
     def flavors(self):
-        output = []
-        for one_scoop in self.scoops:
-            output.append(one_scoop.flavor)
-        return output
+        return [one_scoop.flavor
+                for one_scoop in self.scoops]
+
+        # output = []
+        # for one_scoop in self.scoops:
+        #     output.append(one_scoop.flavor)
+        # return output
 
 
 class BigBowl(Bowl):
