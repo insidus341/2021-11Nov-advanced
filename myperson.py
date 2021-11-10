@@ -11,7 +11,7 @@ class Person:
         return f'Hello, {self.name}!'
 
     def __del__(self):
-        return f'I am dead! {self.name}'
+        print(f'I am dead! {self.name}')
 
 
 print(f'Before, population = {Person.population}')
