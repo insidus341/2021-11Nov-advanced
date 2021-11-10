@@ -45,6 +45,11 @@ class Bowl:
         print(f'{index=}')
         return self.scoops[index]
 
+    def __add__(self, other):
+        new_bowl = Bowl()
+        new_bowl.scoops = self.scoops + other.scoops
+        return new_bowl
+
 
 class BigBowl(Bowl):
     MAX_SCOOPS = 5
