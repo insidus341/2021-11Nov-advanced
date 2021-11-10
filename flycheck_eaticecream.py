@@ -5,9 +5,9 @@ from icecream import Scoop, Bowl
 s1 = Scoop('chocolate')
 s2 = Scoop('vanilla')
 s3 = Scoop('coffee')
-s4 = Scoop('coffee')
-s5 = Scoop('coffee')
-s6 = Scoop('coffee')
+s4 = Scoop('flavor 4')
+s5 = Scoop('flavor 5')
+s6 = Scoop('flavor ')
 
 print(s1.flavor)  # prints chocolate
 
