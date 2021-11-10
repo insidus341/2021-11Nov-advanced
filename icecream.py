@@ -9,6 +9,8 @@ class Bowl:
 
     def add_scoops(self, *args):
         for one_scoop in args:
+            if len(self.scoops) >= 3:
+                break
             self.scoops.append(one_scoop)
 
     def flavors(self):
