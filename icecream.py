@@ -27,3 +27,6 @@ class Bowl:
 
 class BigBowl(Bowl):
     MAX_SCOOPS = 5
+
+
+# bb.__init__() # does bb have __init__? No.  Does BigBowl have __init__? No.  Does Bowl have __init__? Yes.
