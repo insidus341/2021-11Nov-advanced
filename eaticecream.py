@@ -24,3 +24,8 @@ bb.add_scoops(s3)
 bb.add_scoops(s4, s5)
 bb.add_scoops(s6)
 print(bb.flavors())
+
+print(s1)
+print(s2)
+print(b)
+print(bb)
