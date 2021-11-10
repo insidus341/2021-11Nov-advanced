@@ -29,10 +29,14 @@ class Bowl:
 
     def __repr__(self):
         output = f'{type(self).__name__} of: \n'
-        for index, one_scoop in enumerate(self.scoops, 1):
-            output += f'\t{index}: {one_scoop}\n'
 
-        return output
+        return output + '\n'.join([f'\t{index}: {one_scoop}'
+                                   for index, one_scoop in enumerate(self.scoops, 1)])
+
+        # for index, one_scoop in enumerate(self.scoops, 1):
+        #     output += f'\t{index}: {one_scoop}\n'
+
+        # return output
 
 
 class BigBowl(Bowl):
