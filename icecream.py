@@ -42,7 +42,7 @@ class Bowl:
         return len(self.scoops)
 
     def __getitem__(self, index):
-        print(f'{slice=}')
+        print(f'{index=}')
         return self.scoops[index]
 
 
