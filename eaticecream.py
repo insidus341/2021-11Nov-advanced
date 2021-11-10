@@ -38,9 +38,9 @@ b += b
 print(b)
 
 b = Bowl()
-b.add_scoops(s1, s2)
+b.add_scoops(s1, s2, s2)
 b2 = Bowl()
-b2.add_scoops(s2, s1)
+b2.add_scoops(s2, s1, s2)
 
 print('-' * 60)
 print(f'{b=}')
