@@ -25,9 +25,6 @@ class Bowl:
 class BigBowl:
     MAX_SCOOPS = 5
 
-    def __init__(self):
-        self.scoops = []
-
     def add_scoops(self, *args):
         for one_scoop in args:
             if len(self.scoops) >= self.MAX_SCOOPS:
