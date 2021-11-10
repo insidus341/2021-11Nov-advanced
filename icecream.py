@@ -27,6 +27,10 @@ class Bowl:
         #     output.append(one_scoop.flavor)
         # return output
 
+    def __repr__(self):
+        output = 'Bowl of: '
+        return output
+
 
 class BigBowl(Bowl):
     MAX_SCOOPS = 5
