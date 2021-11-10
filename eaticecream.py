@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+from icecream import Scoop, Bowl
+
 s1 = Scoop('chocolate')
 s2 = Scoop('vanilla')
 s3 = Scoop('coffee')
