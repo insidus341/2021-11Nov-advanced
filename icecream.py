@@ -22,8 +22,11 @@ class Bowl:
         return output
 
 
-class BigBowl:
+class BigBowl(Bowl):
     MAX_SCOOPS = 5
+
+    def __init__(self):
+        self.scoops = []
 
     def add_scoops(self, *args):
         for one_scoop in args:
