@@ -28,7 +28,7 @@ class Bowl:
         # return output
 
     def __repr__(self):
-        output = '{type(self).__name__} of: \n'
+        output = f'{type(self).__name__} of: \n'
         for index, one_scoop in enumerate(self.scoops, 1):
             output += f'\t{index}: {one_scoop}\n'
 
