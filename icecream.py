@@ -50,6 +50,9 @@ class Bowl:
         new_bowl.scoops = self.scoops + other.scoops
         return new_bowl
 
+    def __eq__(self, other):
+        return vars(self) == vars(other)
+
 
 class BigBowl(Bowl):
     MAX_SCOOPS = 5
