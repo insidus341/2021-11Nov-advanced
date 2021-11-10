@@ -30,9 +30,3 @@ class BigBowl(Bowl):
             if len(self.scoops) >= self.MAX_SCOOPS:
                 break
             self.scoops.append(one_scoop)
-
-    def flavors(self):
-        output = []
-        for one_scoop in self.scoops:
-            output.append(one_scoop.flavor)
-        return output
