@@ -43,7 +43,7 @@ b2 = Bowl()
 b2.add_scoops(s2, s3)
 
 print('-' * 60)
-print(b)
-print(b2)
+print(f'{b=}')
+print(f'{b2=}')
 
 print(f'b == b2? {b == b2}')
