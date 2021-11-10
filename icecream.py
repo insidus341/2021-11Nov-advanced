@@ -51,7 +51,7 @@ class Bowl:
         return new_bowl
 
     def __eq__(self, other):
-        return vars(self) == vars(other)
+        return set(self.scoops) == set(other.scoops)
 
 
 class BigBowl(Bowl):
