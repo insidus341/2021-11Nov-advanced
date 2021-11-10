@@ -29,7 +29,7 @@ class Bowl:
 
     def __repr__(self):
         output = 'Bowl of: \n'
-        for index, one_scoop in enumerate(self.scoops):
+        for index, one_scoop in enumerate(self.scoops, 1):
             output += f'\t{index}: {one_scoop}\n'
 
         return output
