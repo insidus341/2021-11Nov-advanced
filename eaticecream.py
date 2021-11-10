@@ -30,4 +30,5 @@ print(s2)
 print(b)
 print(bb)
 print(len(bb))
-print(bb[3])
+print(bb[3])   # single index
+print(bb[1:3])  # slice
