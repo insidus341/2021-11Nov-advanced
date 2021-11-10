@@ -36,3 +36,9 @@ print(bb[1:3])  # --> bb[slice(1,3)]
 print(b + b)
 b += b
 print(b)
+
+b = Bowl()
+b.add_scoops(s1, s2)
+b2 = Bowl()
+b2.add_scoops(s2, s3)
+print(b == b2)
