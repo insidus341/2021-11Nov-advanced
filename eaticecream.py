@@ -16,4 +16,4 @@ b.add_scoops(s1, s2)
 b.add_scoops(s3)
 b.add_scoops(s4, s5)
 b.add_scoops(s6)
-print(b.flavors())  # ['chocolate', 'vanilla', 'coffee']
+print(b.flavors())
