@@ -27,9 +27,3 @@ class Bowl:
 
 class BigBowl(Bowl):
     MAX_SCOOPS = 5
-
-    def add_scoops(self, *args):
-        for one_scoop in args:
-            if len(self.scoops) >= self.MAX_SCOOPS:
-                break
-            self.scoops.append(one_scoop)
