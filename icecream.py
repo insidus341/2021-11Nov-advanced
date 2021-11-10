@@ -38,6 +38,9 @@ class Bowl:
 
         # return output
 
+    def __len__(self):
+        return len(self.scoops)
+
 
 class BigBowl(Bowl):
     MAX_SCOOPS = 5
