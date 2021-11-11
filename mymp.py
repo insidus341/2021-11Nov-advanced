@@ -30,12 +30,9 @@ for i in range(10):
     # create a new Process object
     p = multiprocessing.Process(target=hello, args=(i,))
 
-    t.start()   # run the thread's function in a new thread
-    all_threads.append(t)
+    p.start()              # run the thread's function in a new process
+    all_processes.append(p)
 
-
-# make sure that all threads have finished running
-# before they get to this point
 
 # we can wait for a thread to finish with the "join" method
 for one_thread in all_threads:
