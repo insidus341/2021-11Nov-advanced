@@ -14,7 +14,7 @@ def hello(n):
 
     # From here, treat it as atomic -- don't let multiple threads in this region simulteously
 
-    with l():
+    with l:
         q.put(f'{n} Hello!')        # add this to the end of the queue
         time.sleep(random.randint(0, 3))
         q.put(f'{n} Goodbye!')      # add this to the end of the queue
