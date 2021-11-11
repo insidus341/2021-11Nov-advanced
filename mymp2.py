@@ -7,8 +7,10 @@ def square(x):
     return x ** 2
 
 
-with ProcessPoolExecutor(max_workers=4) as executor:
-    output = executor.map(square, range(10))
+if __name__ == '__main__':
 
-print('Done!')
-print(list(output))
+    with ProcessPoolExecutor(max_workers=4) as executor:
+        output = executor.map(square, range(10))
+
+    print('Done!')
+    print(list(output))
