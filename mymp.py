@@ -9,7 +9,7 @@ import random
 import multiprocessing
 
 
-def hello(n):
+def hello(n, l, q):
     time.sleep(random.randint(0, 3))
 
     # From here, treat it as atomic -- don't let multiple threads in this region simulteously
