@@ -35,8 +35,8 @@ for i in range(10):
 
 
 # we can wait for a thread to finish with the "join" method
-for one_thread in all_threads:
-    one_thread.join()
+for one_process in all_processes:
+    one_process.join()
 
 print('Done!')
 
