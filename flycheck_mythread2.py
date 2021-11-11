@@ -9,12 +9,14 @@ import threading
 
 def hello(n):
     time.sleep(random.randint(0, 3))
-    q.put(f'{n} Hello!')        # add this to the end of the queue
+    print(f'{n} Hello!')        # add this to the end of the queue
 
 
 with ThreadPoolExecutor(max_workers=4) as executor:
     for i in range(10):
-        executor.submit(
+        executor.submit(hello, i)
+
+        
     
 
 
