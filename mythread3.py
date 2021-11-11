@@ -13,6 +13,7 @@ def hello(n):
 
 with ThreadPoolExecutor(max_workers=4) as executor:
     for i in range(10):
-        executor.submit(hello, i)  # call hello(i) inside of a thread
+        future = executor.submit(hello, i)  # call hello(i) inside of a thread
+        print(future.result())
 
 print('Done!')
