@@ -30,3 +30,6 @@ for one_thread in all_threads:
     one_thread.join()
 
 print('Done!')
+
+while not q.empty():
+    print(q.get())   # retrieve from the top of the queue
