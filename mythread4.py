@@ -6,11 +6,7 @@ import time
 import random
 
 with ThreadPoolExecutor(max_workers=4) as executor:
-    for i in range(10):
-        # call the function in a thread; return a future right away
-        future = executor.submit(hello, i)
-
-        # get the result from the function via the future (if ready)
-        print(future.result())
+    output = map(lambda x: x**2, range(10))
 
 print('Done!')
+print(output)
