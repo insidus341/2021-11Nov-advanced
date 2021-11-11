@@ -8,9 +8,6 @@ import time
 import random
 import multiprocessing
 
-q = multiprocessing.Queue()               # thread-safe data structure!
-l = multiprocessing.Lock()            # create a "mutex"
-
 
 def hello(n):
     time.sleep(random.randint(0, 3))
@@ -25,20 +22,23 @@ def hello(n):
     # Above here, treat it as atomic -- don't let multiple threads in this region simulteously
 
 
-all_processes = []
-for i in range(10):
-    # create a new Process object
-    p = multiprocessing.Process(target=hello, args=(i,))
+if __name__ == '__main__':
+    q = multiprocessing.Queue()               # thread-safe data structure!
+    l = multiprocessing.Lock()            # create a "mutex"
 
-    p.start()              # run the thread's function in a new process
-    all_processes.append(p)
+    all_processes = []
+    for i in range(10):
+        # create a new Process object
+        p = multiprocessing.Process(target=hello, args=(i,))
 
+        p.start()              # run the thread's function in a new process
+        all_processes.append(p)
 
-# we can wait for a thread to finish with the "join" method
-for one_process in all_processes:
-    one_process.join()
+    # we can wait for a thread to finish with the "join" method
+    for one_process in all_processes:
+        one_process.join()
 
-print('Done!')
+    print('Done!')
 
-while not q.empty():
-    print(q.get())   # retrieve from the top of the queue
+    while not q.empty():
+        print(q.get())   # retrieve from the top of the queue
