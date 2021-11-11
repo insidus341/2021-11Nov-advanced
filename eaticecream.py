@@ -50,6 +50,8 @@ print(f'b == b2? {b == b2}')
 
 
 print('=====')
+b = Bowl()
+b.add_scoops(s1, s2, s2)
 print(type(b))
 for one_scoop in b:
     print(one_scoop)
