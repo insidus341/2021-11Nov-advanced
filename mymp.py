@@ -25,10 +25,10 @@ def hello(n):
     # Above here, treat it as atomic -- don't let multiple threads in this region simulteously
 
 
-all_threads = []
+all_processes = []
 for i in range(10):
-    # create a new Thread object
-    t = threading.Thread(target=hello, args=(i,))
+    # create a new Process object
+    p = multiprocessing.Process(target=hello, args=(i,))
 
     t.start()   # run the thread's function in a new thread
     all_threads.append(t)

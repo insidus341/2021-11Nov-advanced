@@ -28,10 +28,10 @@ def hello(n):
 all_processes = []
 for i in range(10):
     # create a new Process object
-    p = threading.Thread(target=hello, args=(i,))
+    p = multiprocessing.Process(target=hello, args=(i,))
 
-    t.start()   # run the thread's function in a new thread
-    all_threads.append(t)
+    p.start()   # run the thread's function in a new thread
+    all_processes.append(t)
 
 
 # make sure that all threads have finished running
