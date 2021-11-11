@@ -47,3 +47,7 @@ print(f'{b=}')
 print(f'{b2=}')
 
 print(f'b == b2? {b == b2}')
+
+
+for one_scoop in b:
+    print(one_scoop)
