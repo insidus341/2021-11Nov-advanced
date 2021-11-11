@@ -3,8 +3,8 @@
 import threading
 
 
-def hello():
-    print('Hello!')
+def hello(n):
+    print(f'{n} Hello!')
 
 
 for i in range(10):
