@@ -17,3 +17,6 @@ for i in range(10):
 
     t.start()   # run the thread's function in a new thread
     all_threads.append(t)
+
+
+print('Done!')
