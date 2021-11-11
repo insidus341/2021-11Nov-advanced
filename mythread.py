@@ -3,6 +3,9 @@
 import time
 import random
 import threading
+import queue
+
+q = queu.Queue()
 
 
 def hello(n):
