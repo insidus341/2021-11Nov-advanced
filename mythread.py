@@ -5,7 +5,8 @@ import random
 import threading
 import queue
 
-q = queue.Queue()   # thread-safe data structure!
+q = queue.Queue()               # thread-safe data structure!
+l = threading.Lock()            # create a "mutex"
 
 
 def hello(n):
