@@ -5,7 +5,7 @@ import random
 import threading
 import queue
 
-q = queu.Queue()
+q = queue.Queue()   # thread-safe data structure!
 
 
 def hello(n):
