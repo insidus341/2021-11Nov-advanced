@@ -47,3 +47,4 @@ print(f'{b=}')
 print(f'{b2=}')
 
 print(f'b == b2? {b == b2}')
+If you're like me, then you might enjoy having a glass with your dinner. 
