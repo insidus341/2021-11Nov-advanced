@@ -50,5 +50,6 @@ print(f'b == b2? {b == b2}')
 
 
 print('=====')
+print(type(b))
 for one_scoop in b:
     print(one_scoop)
