@@ -5,10 +5,10 @@ from concurrent.futures import ThreadPoolExecutor
 import time
 import random
 import threading
-import queue
 
 
 def hello(n):
+    time.sleep(random.randint(0, 3))
     q.put(f'{n} Hello!')        # add this to the end of the queue
 
 
