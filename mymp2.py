@@ -2,8 +2,13 @@
 
 from concurrent.futures import ProcessPoolExecutor
 
+
+def square(x):
+    return x ** 2
+
+
 with ProcessPoolExecutor(max_workers=4) as executor:
-    output = executor.map(lambda x: x**2, range(10))
+    output = executor.map(square, range(10))
 
 print('Done!')
 print(list(output))
