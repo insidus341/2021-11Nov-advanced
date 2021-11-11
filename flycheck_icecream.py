@@ -44,9 +44,9 @@ class Bowl:
     def __len__(self):
         return len(self.scoops)
 
-    # def __getitem__(self, index):
-    #     print(f'{index=}')
-    #     return self.scoops[index]
+    def __getitem__(self, index):
+        print(f'{index=}')
+        return self.scoops[index]
 
     def __add__(self, other):
         new_bowl = Bowl()
