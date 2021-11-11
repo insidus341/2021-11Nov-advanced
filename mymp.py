@@ -7,10 +7,9 @@
 import time
 import random
 import multiprocessing
-import queue
 
-q = queue.Queue()               # thread-safe data structure!
-l = threading.Lock()            # create a "mutex"
+q = multiprocessing.Queue()               # thread-safe data structure!
+l = multiprocessing.Lock()            # create a "mutex"
 
 
 def hello(n):
