@@ -19,4 +19,11 @@ for i in range(10):
     all_threads.append(t)
 
 
+# make sure that all threads have finished running
+# before they get to this point
+
+# we can wait for a thread to finish with the "join" method
+for one_thread in all_threads:
+    one_thread.join()
+
 print('Done!')
