@@ -10,9 +10,14 @@ q = queue.Queue()   # thread-safe data structure!
 
 def hello(n):
     time.sleep(random.randint(0, 3))
+
+    # From here, treat it as atomic -- don't let multiple threads in this region simulteously
+
     q.put(f'{n} Hello!')        # add this to the end of the queue
     time.sleep(random.randint(0, 3))
     q.put(f'{n} Goodbye!')      # add this to the end of the queue
+
+    # Above here, treat it as atomic -- don't let multiple threads in this region simulteously
 
 
 all_threads = []
