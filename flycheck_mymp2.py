@@ -2,9 +2,6 @@
 
 from concurrent.futures import ProcessPoolExecutor
 
-import time
-import random
-
 with ThreadPoolExecutor(max_workers=4) as executor:
     output = executor.map(lambda x: x**2, range(10))
 
