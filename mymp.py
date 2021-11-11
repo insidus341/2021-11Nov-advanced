@@ -29,7 +29,7 @@ if __name__ == '__main__':
     all_processes = []
     for i in range(10):
         # create a new Process object
-        p = multiprocessing.Process(target=hello, args=(i,))
+        p = multiprocessing.Process(target=hello, args=(i, l, q))
 
         p.start()              # run the thread's function in a new process
         all_processes.append(p)
